@@ -45,7 +45,4 @@ function validateForm(e) {
 
   let emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/g;
   let phoneRegEx = /[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/;
-
-  console.log(emailRegEx.test("sbrackat@gmail.com"));
-  console.log(phoneRegEx.test("555-555-1234"));
 }
