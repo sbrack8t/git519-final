@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -21,7 +22,9 @@
     <section id="hero" class="hero-block">
       <div class="hero-content">
         <p class="hero-eyebrow">Eyebrow</p>
-        <h1 class="hero-headline">Hero headline.<br />Built to last.</h1>
+        <h1 class="hero-headline">
+          Hero headline.<br />Modern Design Inspiration
+        </h1>
         <p class="hero-subtext">Subtext</p>
         <div class="hero-actions">
           <a href="#gallery" class="button button-primary">Gallery Link</a>
@@ -76,7 +79,9 @@
               placeholder="Jane"
               required
             />
+            <div class="form-error" hidden aria-hidden="true"></div>
           </div>
+
           <div class="form-field">
             <label for="contact-last-name">Last name</label>
             <input
@@ -86,8 +91,10 @@
               placeholder="Smith"
               required
             />
+            <div class="form-error" hidden aria-hidden="true"></div>
           </div>
         </div>
+
         <div class="form-field">
           <label for="contact-email">Email address</label>
           <input
@@ -97,9 +104,22 @@
             placeholder="jane@example.com"
             required
           />
+          <div class="form-error" hidden aria-hidden="true"></div>
         </div>
 
-        <fieldset class="form-fieldset">
+        <div class="form-field">
+          <label for="contact-phone">Phone number</label>
+          <input
+            type="phone"
+            id="contact-phone"
+            name="phone"
+            placeholder="123-111-1234"
+            required
+          />
+          <div class="form-error" hidden aria-hidden="true"></div>
+        </div>
+
+        <fieldset class="form-fieldset" id="contact-method-preffer">
           <legend class="form-legend">Select preferred contact method</legend>
           <div class="form-field">
             <input
@@ -125,8 +145,15 @@
             placeholder="Please enter your comments"
             required
           ></textarea>
+          <div class="form-error" hidden aria-hidden="true"></div>
         </div>
-        <button type="submit" class="button button-primary">Send</button>
+        <button
+          id="contact-form-submit"
+          type="submit"
+          class="button button-primary"
+        >
+          Send
+        </button>
       </form>
     </section>
   </body>
