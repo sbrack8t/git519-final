@@ -5,7 +5,7 @@
     <script src="js/script.js" defer></script>
     <title>Document</title>
   </head>
-  <body>
+  <>
     <nav id="main-nav">
       <div class="nav-inner">
         <a href="#hero" class="nav-logo">Studio Brooklyn</a>
@@ -31,6 +31,8 @@
         </div>
       </div>
     </section>
+
+    
 
     <section id="about">
       <div class="section-inner about-layout">
@@ -119,19 +121,20 @@
           <div class="form-error" hidden aria-hidden="true"></div>
         </div>
 
-        <fieldset class="form-fieldset" id="contact-method-preffer">
+        <fieldset class="form-fieldset" id="contact-method-preference">
           <legend class="form-legend">Select preferred contact method</legend>
           <div class="form-field">
             <input
               type="radio"
               id="contact-method-phone"
               value="phone"
+              name="preference"
               checked
             />
             <label for="contact-method-phone">Phone</label>
           </div>
           <div class="form-field">
-            <input type="radio" id="contact-method-email" value="email" />
+            <input type="radio" id="contact-method-email" value="email" name="preference"/>
             <label for="contact-method-email">Email</label>
           </div>
         </fieldset>
@@ -155,6 +158,9 @@
           Send
         </button>
       </form>
+      <div id="form-message">
+
+      </div>
     </section>
   </body>
 </html>
